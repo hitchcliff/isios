@@ -10,8 +10,8 @@
     <script src="index.js"></script>
 
     <script>
-      const ios = new isIOS();
-      alert(`Is Browser IOS: ${ios.check() ? "Yes" : "No"}`);
+      const isIOS = new CheckBrowser().isIOS;
+      alert(`Is Browser IOS: ${isIOS ? "Yes" : "No"}`);
     </script>
   </body>
 </html>

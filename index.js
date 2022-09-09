@@ -1,4 +1,6 @@
-class isIOS {
+class CheckBrowser {
+  isIOS;
+
   constructor() {
     this.check();
   }
@@ -15,6 +17,7 @@ class isIOS {
     const isAppleDevice = navigator.userAgent.includes("Macintosh");
     const isTouchScreen = navigator.maxTouchPoints >= 1; // true for iOS 13 (and hopefully beyond)
 
-    return isIOS || (isAppleDevice && (isTouchScreen || iosQuirkPresent()));
+    this.isIOS =
+      isIOS || (isAppleDevice && (isTouchScreen || iosQuirkPresent()));
   }
 }

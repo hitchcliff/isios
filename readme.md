@@ -11,6 +11,6 @@
 2. Instantiate
 
 ```
-const ios = new isIOS();
-alert(`Is Browser IOS: ${ios.check() ? "Yes" : "No"}`);
+const isIOS = new CheckBrowser().isIOS;
+alert(`Is Browser IOS: ${isIOS ? "Yes" : "No"}`);
 ```
